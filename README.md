@@ -142,7 +142,7 @@ dobook-club-api-automation/
 ```
 ## ⚙️ Запуск тестов через Jenkins
 
-Для запуска API-тестов в CI/CD используется проект в Jenkins: [ainur_diplom](https://jenkins.qa.guru/job/ainur_book_club_api/)
+Для запуска API-тестов в CI/CD используется проект в Jenkins: [ainur_book_club_api](https://jenkins.qa.guru/job/ainur_book_club_api/)
 
 
 ### Результаты прогона в Jenkins
