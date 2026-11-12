@@ -149,7 +149,7 @@ dobook-club-api-automation/
 После завершения сборки все тесты успешно отработали
 
 <p align="center">
-  <img src="docs/api/images/jenkins-build-success.png" alt="Jenkins Build Success" width="850px"/>
+  <img src="/docs/api/images/jenkins-build-success.png" alt="Jenkins Build Success" width="850px"/>
 </p>
 
 ---
@@ -160,12 +160,12 @@ dobook-club-api-automation/
 ## 📊  [Allure-отчет](https://jenkins.qa.guru/job/ainur_book_club_api/1/allure/)
 ### Основная страница отчета
 <p align="center">
-  <img src="docs/api/images/api-allure-overview.png" alt="Allure Overview" width="850px"/>
+  <img src="/docs/api/images/api-allure-overview.png" alt="Allure Overview" width="850px"/>
 </p>
 
 ### Тест-кейсы
 <p align="center">
-  <img src="docs/api/images/api_Test_cases.png" alt="Allure Test Details" width="850px"/>
+  <img src="/docs/api/images/api_Test_cases.png" alt="Allure Test Details" width="850px"/>
 </p>
 
 ---
@@ -175,7 +175,7 @@ dobook-club-api-automation/
 Результаты выполнения тестов автоматически выгружаются в Allure TestOps. Посмотреть детальный отчет и шаги прогона можно по [ссылке на лаунч в Allure TestOps](https://allure.qa.guru/launch/57093/tree/1177666)
 
 <p align="center">
-  <img src="docs/api/images/api-allure-testops-launch.png.png" alt="Allure TestOps Launch Results" width="850px"/>
+  <img src="/docs/api/images/api-allure-testops-launch.png.png" alt="Allure TestOps Launch Results" width="850px"/>
 </p>
 
 <p align="right"><a href="#readme-top">⬆️ наверх</a></p>
@@ -187,7 +187,7 @@ dobook-club-api-automation/
 В рамках проекта настроена интеграция с Jira. Задача на автоматизацию интерфейса **[MUL-74](https://jira.qa.guru/browse/MUL-74)**
 
 <p align="center">
-  <img src="docs/api/images/api-jira-integration.png" alt="Jira Task MUL-73 Integration" width="850px"/>
+  <img src="/docs/api/images/api-jira-integration.png" alt="Jira Task MUL-73 Integration" width="850px"/>
 </p>
 
 <p align="right"><a href="#readme-top">⬆️ наверх</a></p>
@@ -200,7 +200,7 @@ dobook-club-api-automation/
 В процессе выполнения сборки в Jenkins настроена автоматическая отправка нотификаций в Telegram-чат с общей статистикой успешных тестов (13 из 13 успешных, 100%):
 
 <p align="center">
-  <img src="docs/api/images/api-telegram-notification.png" alt="Telegram Notification" width="450px"/>
+  <img src="/docs/api/images/api-telegram-notification.png" alt="Telegram Notification" width="450px"/>
 </p>
 
 <p align="right"><a href="#readme-top">⬆️ наверх</a></p>
