@@ -207,5 +207,5 @@ dobook-club-api-automation/
 
 ---
 <p align="center">
-  <a href="../../README.md"><b>👈 Вернуться на главную страницу репозитория</b></a>
-</p>
+  <a href="https://github.com/Nurchik3009"><b>👈 Вернуться на главную страницу профиля</b></a>
+</p>с
