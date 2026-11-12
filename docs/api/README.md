@@ -50,35 +50,55 @@
 Пакет автоматизации API-тестов (`src/test/java/guru/qa/api/`) организован по принципам модульности и разделения ответственности:
 
 ```text
-swag-labs-qa-automation/
+dobook-club-api-automation/
 ├── docs/
 │   └── api/
-│       └── README.md        # Документация по API-тестам (содержит скриншоты отчетов)
-└── src/
-    └── test/
-        └── java/
-            └── guru/
-                └── qa/
-                    └── api/
-                        ├── api/
-                        │   ├── ApiClient.java         # Базовый клиент
-                        │   ├── AuthApiClient.java     # Клиент авторизации
-                        │   └── ClubsApiClient.java    # Клиент эндпоинтов клубов
-                        ├── config/
-                        │   └── ApiConfig.java         # Конфигурация API
-                        ├── models.clubs/
-                        │   ├── ClubBodyModel.java     # Модель тела запроса клуба
-                        │   ├── ClubModel.java         # Модель объекта клуба
-                        │   ├── ClubPatchBodyModel.java# Модель частичного обновления
-                        │   ├── ClubReviewModel.java   # Модель отзывов
-                        │   ├── ClubReviewUserModel.java# Модель пользователя отзыва
-                        │   └── ClubsListResponseModel.java # Модель списка клубов
-                        ├── specs/
-                        │   └── clubs/
-                        │       └── ClubsSpec.java     # Спецификации запросов и ответов
-                        ├── BaseSpec.java              # Базовые спецификации
-                        ├── TestBase.java              # Базовый класс тестов
-                        └── TestData.java              # Тестовые данные
+│       ├── images/
+│       └── README.md
+├── notifications/
+├── src/
+│   └── test/
+│       ├── java/
+│       │   └── guru/
+│       │       └── qa/
+│       │           ├── allure/
+│       │           │   └── CustomAllureListener.java
+│       │           └── api/
+│       │               ├── api/
+│       │               │   ├── ApiClient.java
+│       │               │   ├── AuthApiClient.java
+│       │               │   └── ClubsApiClient.java
+│       │               ├── config/
+│       │               │   └── ApiConfig.java
+│       │               ├── models.clubs/
+│       │               │   ├── ClubBodyModel.java
+│       │               │   ├── ClubModel.java
+│       │               │   ├── ClubPatchBodyModel.java
+│       │               │   ├── ClubReviewModel.java
+│       │               │   ├── ClubReviewUserModel.java
+│       │               │   └── ClubsListResponseModel.java
+│       │               ├── specs/
+│       │               │   └── clubs/
+│       │               │       └── ClubsSpec.java
+│       │               ├── BaseSpec.java
+│       │               ├── TestBase.java
+│       │               ├── TestData.java
+│       │               └── tests/
+│       │                   └── ClubsTests.java
+│       └── resources/
+│           ├── allure/
+│           │   └── allure.properties
+│           ├── schemas.clubs/
+│           │   ├── club_response_schema.json
+│           │   └── clubs_list_response_schema.json
+│           └── tpl/
+│               ├── request.ftl
+│               └── response.ftl
+├── .gitignore
+├── build.gradle
+├── gradlew
+├── gradlew.bat
+└── settings.gradle
 ```
 <a id="cases"></a>
 ## ✅ Реализованные тест-кейсы
@@ -114,25 +134,19 @@ swag-labs-qa-automation/
 
 Локальный запуск API-тестов:
 ```
-./gradlew clean test -DtestTags=api
+./gradlew clean test
 ```
 Запуск с генерацией Allure-отчёта:
 ```
-./gradlew clean test -DtestTags=api allureServe
+./gradlew allureServe
 ```
 ## ⚙️ Запуск тестов через Jenkins
 
-Для запуска API-тестов в CI/CD используется проект в Jenkins: [ainur_diplom](https://jenkins.qa.guru/job/ainur_diplom/)
+Для запуска API-тестов в CI/CD используется проект в Jenkins: [ainur_diplom](https://jenkins.qa.guru/job/ainur_book_club_api/)
 
-### Параметры сборки:
-Для запуска выбирается параметр TEST_TYPE = API:
-
-<p align="center">
-  <img src="./images/jenkins-build-parameters.png" alt="Jenkins Build Parameters" width="850px"/>
-</p>
 
 ### Результаты прогона в Jenkins
-После завершения сборки (#70) все тесты успешно отработали
+После завершения сборки все тесты успешно отработали
 
 <p align="center">
   <img src="./images/jenkins-build-success.png" alt="Jenkins Build Success" width="850px"/>
@@ -143,7 +157,7 @@ swag-labs-qa-automation/
 <a id="allure"></a>
 
 <a id="allure"></a>
-## 📊  [Allure-отчет](https://jenkins.qa.guru/job/ainur_diplom/69/allure/)
+## 📊  [Allure-отчет](https://jenkins.qa.guru/job/ainur_book_club_api/1/allure/)
 ### Основная страница отчета
 <p align="center">
   <img src="./images/api-allure-overview.png" alt="Allure Overview" width="850px"/>
