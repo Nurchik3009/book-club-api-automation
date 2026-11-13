@@ -200,7 +200,7 @@ dobook-club-api-automation/
 В процессе выполнения сборки в Jenkins настроена автоматическая отправка нотификаций в Telegram-чат с общей статистикой успешных тестов (13 из 13 успешных, 100%):
 
 <p align="center">
-  <img src="/docs/api/images/api-telegram-notification.png" alt="Telegram Notification" width="450px"/>
+  <img src="/docs/api/images/api-telegram-notification.png" alt="Telegram Notification" width="300px"/>
 </p>
 
 <p align="right"><a href="#readme-top">⬆️ наверх</a></p>
