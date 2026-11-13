@@ -157,7 +157,7 @@ dobook-club-api-automation/
 <a id="allure"></a>
 
 <a id="allure"></a>
-## 📊  [Allure-отчет](https://jenkins.qa.guru/job/ainur_book_club_api/)
+## 📊  [Allure-отчет](https://jenkins.qa.guru/job/ainur_book_club_api/6/allure/)
 ### Основная страница отчета
 <p align="center">
   <img src="/docs/api/images/api-allure-overview.png" alt="Allure Overview" width="850px"/>
