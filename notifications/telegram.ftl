@@ -1,4 +1,4 @@
-<b>Swag Labs QA Automation — UI / API / Mobile</b>
+<b>Book Club API Automation </b>
 
 <b>Результаты:</b>
 Рабочее окружение: ${environment}

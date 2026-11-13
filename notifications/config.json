@@ -1,6 +1,6 @@
 {
   "base": {
-    "project": "Swag Labs QA Automation — UI / API / Mobile",
+    "project": "Book Club API Automation",
     "environment": "QA",
     "comment": "Дипломный проект QA GURU | @AKaliakbarova",
     "reportLink": "${BUILD_URL}",
@@ -17,6 +17,8 @@
   "proxy": {
     "type": "socks5",
     "host": "proxy.qaguru.school",
-    "port": 7777
+    "port": 7777,
+    "username": "qaguru",
+    "password": "tZcxv5q3VEHCEZlISGsMLSK7iPoN214p"
   }
 }
